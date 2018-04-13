@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computershop.controllers.QuestionAboutLogginInFrameController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="300.0" prefHeight="900.0" prefWidth="1600.0">
+         <children>
+            <Region prefHeight="720.0" prefWidth="5.0" HBox.hgrow="SOMETIMES" />
+            <VBox prefHeight="720.0" prefWidth="908.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Region prefHeight="100.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: segments(10, 10, 5, 0); -fx-border-radius: 20; -fx-background-color: grey; -fx-background-radius: 20;">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <ImageView fitHeight="150.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Y_KOM_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="619.0" style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1.8), 20, 0.3, 0, 0);">
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="labelShopWhereApplicationWasLaunched" alignment="CENTER" prefHeight="17.0" prefWidth="2500.0" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="17.0" prefWidth="104.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="100.0" prefWidth="588.0" VBox.vgrow="SOMETIMES" />
+                  <HBox maxHeight="652.0" minHeight="39.0" prefHeight="255.0" prefWidth="1135.0" style="-fx-background-color: #39393c; -fx-background-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0.5, 0, 0);">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <VBox prefHeight="600.0" prefWidth="500.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="388.0" VBox.vgrow="SOMETIMES" />
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="518.0" text="Mam już konto" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="518.0" text="Masz już konto? Wpisz swoje dane." textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="30.0" prefWidth="254.0">
+                                 <children>
+                                    <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                    <Label prefHeight="17.0" prefWidth="154.0" text="Login" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets top="23.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="textFieldLogin" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;">
+                                       <HBox.margin>
+                                          <Insets top="18.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="29.0" prefWidth="254.0">
+                                 <children>
+                                    <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                    <Label prefHeight="17.0" prefWidth="154.0" text="Hasło" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets top="13.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <PasswordField fx:id="textFieldPassword" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;">
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </PasswordField>
+                                    <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#buttonLogin_onAction" prefHeight="25.0" prefWidth="518.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20; -fx-background-color: #0083F9;" text="Zaloguj się">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Open Sans Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+                           </children>
+                        </VBox>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0.5, 0, 0);">
+                           <HBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <VBox prefHeight="598.0" prefWidth="500.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="254.0" VBox.vgrow="SOMETIMES" />
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="518.0" text="Nie mam konta" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="518.0" text="Nie masz konta? Żaden problem." textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Regular" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="buttonContinueWithoutLogin" mnemonicParsing="false" onAction="#buttonContinueWithoutLogin_onAction" prefHeight="25.0" prefWidth="518.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20; -fx-background-color: #0083F9;" text="Kontynuuj bez logowania">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Open Sans Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="518.0" text="lub" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Regular" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#buttonRegister_onAction" prefHeight="25.0" prefWidth="518.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20; -fx-background-color: grey;" text="Załóż konto">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Open Sans Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+                           </children>
+                        </VBox>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#buttonBack_onAction" prefHeight="25.0" prefWidth="98.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-color: grey; -fx-background-radius: 20;" text="Powrót">
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="100.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+            <Region prefHeight="720.0" prefWidth="5.0" HBox.hgrow="SOMETIMES" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

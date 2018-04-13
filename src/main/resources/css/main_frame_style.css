@@ -1,0 +1,9 @@
+.text-area .text {
+    -fx-text-alignment: center;
+}
+
+.text-area{
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 13px;
+    -fx-font-style: normal;
+}

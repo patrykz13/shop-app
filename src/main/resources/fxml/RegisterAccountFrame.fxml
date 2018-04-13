@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computershop.controllers.RegisterAccountFrameController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="300.0" prefHeight="900.0" prefWidth="1600.0">
+         <children>
+            <Region prefHeight="720.0" prefWidth="5.0" HBox.hgrow="SOMETIMES" />
+            <VBox prefHeight="720.0" prefWidth="908.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Region prefHeight="253.0" prefWidth="1135.0" VBox.vgrow="SOMETIMES" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: segments(10, 10, 5, 0); -fx-border-radius: 20; -fx-background-color: grey; -fx-background-radius: 20;">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <ImageView fitHeight="150.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Y_KOM_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="619.0" style="-fx-background-color: black; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1.8), 20, 0.3, 0, 0);">
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="labelShopWhereApplicationWasLaunched" alignment="CENTER" prefHeight="17.0" prefWidth="2500.0" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Region prefHeight="17.0" prefWidth="104.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="263.0" prefWidth="1135.0" VBox.vgrow="SOMETIMES" />
+                  <HBox maxHeight="844.0" minHeight="39.0" prefHeight="842.0" prefWidth="1135.0" style="-fx-background-color: #39393c; -fx-background-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0.5, 0, 0);">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <VBox prefHeight="569.0" prefWidth="985.0" style="-fx-background-color: #2A2A2A; -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 15, 0.0 , 0 , 2 );">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="388.0" VBox.vgrow="SOMETIMES" />
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="1119.0" text="Dane do konta" textFill="WHITE">
+                                 <font>
+                                    <Font name="Open Sans Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <VBox prefHeight="434.0" prefWidth="710.0" HBox.hgrow="SOMETIMES">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="1160.0" text="Wpisz swoje dane." textFill="WHITE" />
+                                          <HBox prefHeight="30.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Imię" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="23.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="18.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldName" onKeyReleased="#textFieldName_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelName" text="Podaj imię." textFill="#0083f9" VBox.vgrow="SOMETIMES" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Nazwisko" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldSurname" onKeyReleased="#textFieldSurname_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelSurname" text="Podaj nazwisko." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="E-mail" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldEmail" onKeyReleased="#textFieldEmail_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelEmail" text="Podaj adres e-mail." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Telefon" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldPhoneNumber" onKeyReleased="#textFieldPhoneNumber_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelPhone" text="Podaj nr telefonu." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Ulica i nr domu" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="12.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldStreet" onKeyReleased="#textFieldStreet_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelStreet" text="Podaj ulicę i nr domu." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <Separator prefWidth="200.0">
+                                             <padding>
+                                                <Insets left="70.0" right="70.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Kod pocztowy" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldPostalCode" onKeyReleased="#textFieldPostalCode_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelPostalCode" text="Podaj kod pocztowy." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Miasto" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldCity" onKeyReleased="#textFieldCity_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelCity" text="Podaj miasto." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="Kraj" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldCountry" onKeyReleased="#textFieldCountry_onAction" prefHeight="25.0" prefWidth="257.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelCountry" text="Podaj kraj." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <VBox prefHeight="434.0" prefWidth="691.0" HBox.hgrow="SOMETIMES">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="1160.0" text="Wpisz dane identyfikujące konto." textFill="WHITE" />
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="231.0" text="Login" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <TextField fx:id="textFieldLogin" onKeyReleased="#textFieldLogin_onAction" prefHeight="25.0" prefWidth="353.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelLogin" text="Podaj login." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="231.0" text="Hasło" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <PasswordField fx:id="passwordFieldPassword" onKeyReleased="#passwordFieldPassword_onAction" prefHeight="25.0" prefWidth="353.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelPassword" text="Podaj hasło." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="29.0" prefWidth="254.0">
+                                             <children>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <Label prefHeight="17.0" prefWidth="231.0" text="Potwierdź hasło" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets top="13.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <HBox.margin>
+                                                      <Insets top="8.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <PasswordField fx:id="passwordFieldConfirmPassword" onKeyReleased="#passwordFieldConfirmPassword_onAction" prefHeight="25.0" prefWidth="353.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20;" />
+                                                      <Label fx:id="labelConfirmPassword" prefHeight="17.0" prefWidth="231.0" text="Ponownie wprowadź hasło." textFill="#0083f9" />
+                                                   </children>
+                                                </VBox>
+                                                <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <VBox.margin>
+                                                <Insets top="20.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <VBox>
+                                                   <children>
+                                                      <Label fx:id="labelLogin1" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="Wymagania dotyczące loginu:">
+                                                         <textFill>
+                                                            <LinearGradient endX="1.0" endY="1.0" startX="0.24761904761904763">
+                                                               <stops>
+                                                                  <Stop color="#949190" />
+                                                                  <Stop color="WHITE" offset="1.0" />
+                                                               </stops>
+                                                            </LinearGradient>
+                                                         </textFill>
+                                                      </Label>
+                                                      <Label fx:id="labelLogin12" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- zawiera tylko małe litery," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin13" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- może kończyć się ciągiem cyf." textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin14" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- minimalna długość - 6," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin141" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- maksymalna długość - 20," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin1411" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- białe znaki niedozwolone." textFill="#bf896a" />
+                                                   </children>
+                                                </VBox>
+                                                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                                <VBox>
+                                                   <children>
+                                                      <Label fx:id="labelLogin11" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="Wymagania dotyczące hasła:">
+                                                         <textFill>
+                                                            <LinearGradient endX="1.0" endY="1.0" startX="0.24761904761904763">
+                                                               <stops>
+                                                                  <Stop color="#949190" />
+                                                                  <Stop color="WHITE" offset="1.0" />
+                                                               </stops>
+                                                            </LinearGradient>
+                                                         </textFill>
+                                                      </Label>
+                                                      <Label fx:id="labelLogin111" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- co najmniej jedna cyfra," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin112" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- co najmniej jedna mała litera," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin113" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- co najmniej jedna duża litera," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin114" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- co najmniej jeden znak specjalny," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin115" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- minimalna długość - 8," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin1151" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- maksymalna długość - 30," textFill="#bf896a" />
+                                                      <Label fx:id="labelLogin11511" alignment="CENTER" prefHeight="17.0" prefWidth="439.0" text="- białe znaki niedozwolone." textFill="#bf896a" />
+                                                   </children>
+                                                </VBox>
+                                                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Button fx:id="buttonConfirm" mnemonicParsing="false" onAction="#buttonConfirm_onAction" prefHeight="25.0" prefWidth="1246.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-radius: 20; -fx-background-color: #0083F9;" text="Utwórz konto">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="18.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Open Sans Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="SOMETIMES" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="10.0" prefHeight="0.0" prefWidth="1135.0">
+                     <children>
+                        <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#buttonBack_onAction" prefHeight="0.0" prefWidth="98.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0); -fx-background-color: grey; -fx-background-radius: 20;" text="Powrót" HBox.hgrow="SOMETIMES">
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Open Sans Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Region maxHeight="1.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <Region prefHeight="251.0" prefWidth="1135.0" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+            <Region prefHeight="720.0" prefWidth="5.0" HBox.hgrow="SOMETIMES" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
